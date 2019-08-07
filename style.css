@@ -131,6 +131,8 @@ h1, p, li, a{
   margin-top: 3em;
   background: rgb(128, 154, 240);
   border-radius: 10px;
+  font-size:1em;
+
 }
 .content div a {
   margin: auto;
