@@ -173,7 +173,7 @@ h1, p, li, a{
 }
 
 
-@media (min-width: 2000px) {
+@media (min-width: 1080px) {
   
   .wrapper {
     grid-template-columns:  1fr 3fr 1fr;
