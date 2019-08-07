@@ -1,0 +1,29 @@
+
+
+<header>
+	<link rel="stylesheet" type="text/css" href="login_style.css">
+    <header>
+
+        
+
+        <div class="login">
+            <h1>Login</h1>
+            <form method="post">
+             
+                <input type="password" name="p" placeholder="Password" required="required" />
+                <input type="button" value=">Let me in" onclick="validate(p.value)" class="btn btn-primary btn-block btn-large">
+            </form>
+        </div>
+
+		 <script type="text/javascript">
+		 function validate(text){
+			if(text == "websitedesign") {
+				location.href="business_outlook.html";
+			} else {
+			alert("login failed. Please try again.");
+			}
+		 }
+
+
+		</script> 
+
