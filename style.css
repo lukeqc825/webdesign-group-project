@@ -149,10 +149,6 @@ h1, p, li, a{
 	color: White; 
 }
 
-.wrapper {
-  margin: 0px 60px ;
-}
-
 .main-footer ul {
   padding: 2.5em 2.5em;
   
@@ -184,6 +180,7 @@ h1, p, li, a{
       "sidebar content content "
       "sidebar content content "
       "footer footer footer"
+    margin: 0px 60px;
   }
   nav ul {
       display: flex;
