@@ -62,6 +62,7 @@ video   {
   
   .wrapper {
     display: grid;
+    justify-items: stretch;
     grid-template-areas: "header"
       "nav"
       "sidebar"
@@ -71,6 +72,7 @@ video   {
     border-radius: 0;
     border-collapse: separate;
     box-shadow: 0px 3px 10px 1px lightgray;
+    
   }
 
 .side ul li a{
@@ -114,25 +116,25 @@ h1, p, li, a{
 .content h1 {
   color:black;
   font-family: 'Pacifico', cursive;
-  font-size: 2em;
+  font-size: 3em;
 }
 .content p {
   text-align: left;
   margin-left: 20px;
   margin-right: 20px;
   color: #373737;
+  font-size: 3em;
 }  
 
 .content div {
   display: flex;
   margin: auto;
-  height: 70px;
-  width: 160px;
+  height: 4em;
+  width: 9em;
   margin-top: 3em;
   background: rgb(128, 154, 240);
   border-radius: 10px;
-  font-size:1em;
-
+  font-size: 4em
 }
 .content div a {
   margin: auto;
@@ -149,29 +151,38 @@ h1, p, li, a{
 	color: White; 
 }
 
+
 .main-footer ul {
   padding: 2.5em 2.5em;
   
 }
 .main-footer ul li {
-  line-height: 32px;
-  font-size: 14px;
+  line-height: 1.5em;
   color: #373737;
+  text-align: center;
+  list-style: none;
 }
 
 .main-nav ul {
   list-style: none;
   padding: 1em 0em;
-  line-height: 3em;
+  line-height: 9em;
 }
 
 .main-head #logo {
   color: white;
   font-family: 'Pacifico', sans-serif;
+  font-size: 5em;
+}
+
+figure img {
+  width: 80%;
+  height: 70%;
+  margin-bottom: 3em;
 }
 
 
-@media (min-width: 700px) {
+@media (min-device-width: 700px) {
   
   .wrapper {
     grid-template-columns:  1fr 3fr 1fr;
@@ -179,8 +190,10 @@ h1, p, li, a{
       "header nav nav"
       "sidebar content content "
       "sidebar content content "
-      "footer footer footer"
-    margin: 0px 60px;
+      "footer footer footer";
+
+    margin: 0px 60px ;
+      
   }
   nav ul {
       display: flex;
@@ -200,7 +213,7 @@ h1, p, li, a{
   .main-head #logo {
     color:#fff;
     font-family: 'Pacifico', sans-serif;
-    font-size: 2em;
+    font-size: 3em;
     margin: auto; /* important */
     text-align: center;
 
@@ -212,7 +225,8 @@ h1, p, li, a{
 
   
   article p{
-    padding: 2em 7em 0em 7em;
+    padding: 0em 7em 0em 7em;
+    
   }
 
   .main-nav {
@@ -226,6 +240,12 @@ h1, p, li, a{
   
   }
   
+  figure img {
+    width: 400px;
+    height: 280px;
+    float: left;
+    margin-right: 30px;
+  }
 
   .side ul li:first-child {
     margin-top: 5em;
@@ -236,8 +256,54 @@ h1, p, li, a{
 
   .main-footer ul li {
     line-height: 32px;
-    font-size: 14px;
+    font-size: 3em;
     color: #373737;
+  }
+
+  p, li {
+    font-size:1em;
+  }
+  .content p{
+    font-size:1em;
+  }
+  .main-head #logo {
+
+    font-size:2em;
+    
+  }
+  .content div  {
+    font-size:1em;
+  }
+  .main-footer ul li {
+    font-size:1em;
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+
+{ 
+  /* STYLES GO HERE */
+  .main-nav ul li {
+    font-size: 3em;
+  }
+
+  .side ul li {
+    font-size: 3em;
+  }
+
+  .content h1 {
+    font-size: 5em;
+  }
+  .content div {
+    width: 8em;
+    height: 4em;
+    font-size: 2.5em;
+  }
+  
+  .main-footer ul li {
+    font-size: 2em;
   }
 }
   
